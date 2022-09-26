@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Juego de Ahorcado</title>
+</head>
+<body>
+	<img class="icono" src="img/alura.png">
+
+	<div class="contenidoInicio" id="contenidoInicio">
+		<div class="botones">
+			<button class="btn-inicioJuego" id="btn-inicioJuego">Iniciar juego</button>
+			<button class="btn-agregarPalabra" id="btn-agregarPalabra">Agregar nueva palabra</button>
+		</div>
+	</div>
+
+
+	<div class="contenidoAgregarPalabra" id="contenidoAgregarPalabra">
+		<div class="contenedor">
+			<input type="text" class="palabraAgregar" id="palabraAgregar" placeholder="Ingrese una palabra" maxlength="8"></input>
+			<div class="separador">
+				<img class="aviso" src="img/aviso.png">
+				<p>Máx. 8 letras</p>
+				<div class="botones">
+					<button class="btn-guardar" id="btn-guardar">Guardar y empezar</button>
+					<button class="btn-cancelar" id="btn-cancelar">Cancelar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="contenidoJuego" id="contenidoJuego">
+		<canvas class="canvas" id="canvas" width="400px" height="500px" ></canvas>
+		<p class="palabra-oculta" id = "palabra-oculta"></p>
+		<input type="text" class="teclado" id="teclado" placeholder="Ingrese letra y presione enter" maxlength="1">
+		<p class="letras" id="letras"></p>
+		<div class="botones">
+			<button class="btn-nuevoJuego" id="btn-nuevoJuego">Nuevo juego</button>
+			<button class="btn-desistir" id="btn-desistir">Desistir</button>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

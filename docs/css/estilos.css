@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Inter, sans-serif;
+}
+
+.icono {
+	margin: 3vh 0 0 5vw;
+}
+
+/*-------------------INICIO------------------------------*/
+
+.contenidoInicio .botones {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-inicioJuego {
+	font-family: Inter, sans-serif;
+	color: #fff;
+	font-size: 18px;
+	background: #0A3871;
+	padding: 40px 100px;
+	border: 1px solid #0A3871;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.btn-agregarPalabra {
+	font-family: Inter, sans-serif;
+	color: #0A3871;
+	font-size: 16px;
+	padding: 20px 40px;
+	border: 1px solid #0A3871;
+	border-radius: 20px;
+}
+
+.btn-inicioJuego:hover, .btn-agregarPalabra:hover {
+	cursor: pointer;
+}
+
+/*-------------------AGREGAR PALABRA------------------------------*/
+
+.contenidoAgregarPalabra {
+	height: 70vh;
+	align-content: center;
+	width: 90vh;
+}
+
+.contenedor {
+	width: 60vw;
+	text-align: left;
+	margin: 8vh auto;
+	margin-left: 25vw;
+}
+
+.palabraAgregar {
+	color: #0A3871;
+	font-size: 32px;
+	width: 60vw;
+	border: none;
+	margin-bottom: 40vh;
+}
+
+.palabraAgregar::placeholder {
+	color: #0A3871;
+}
+
+.palabraAgregar:focus {
+	outline: none;
+}
+
+.aviso {
+	vertical-align: middle;
+}
+
+.contenidoAgregarPalabra p {
+	color: #495057;
+	font-size: 12px;
+	display: inline;
+}
+
+.contenidoAgregarPalabra .botones {
+	margin-top: 10px;
+}
+
+.btn-guardar, .btn-cancelar {
+	width: 25vw;
+	border-radius: 20px;
+	padding: 20px;
+	border: none;
+}
+
+.btn-guardar {
+	color: #fff;
+	background: #0A3871;
+	margin-right: 20px;
+	border: 1px solid #0A3871;
+}
+
+.btn-cancelar {
+	color: #0A3871;
+	border: 1px solid #0A3871;
+}
+
+.btn-guardar:hover, .btn-cancelar:hover {
+	cursor: pointer;
+}
+
+/*-------------------JUEGO------------------------------*/
+
+.contenidoJuego {
+	text-align: center;
+}
+
+.canvas {
+	background: #fff;
+}
+
+.palabra-oculta{
+	margin: 20px 0px 10px 0px;
+	font-size: 50px;
+	text-transform: uppercase;
+	line-height: 150%;
+	letter-spacing: 10px;
+	color: #0A3871;
+}
+
+.teclado {
+	width: 230px;
+	height: 30px;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.letras {
+	margin-bottom: 10vh;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #495057;
+}
+
+
+.btn-nuevoJuego, .btn-desistir {
+	width: 25vw;
+	border-radius: 20px;
+	padding: 20px;
+	border: none;
+}
+
+.btn-nuevoJuego {
+	color: #fff;
+	background: #0A3871;
+	margin-right: 20px;
+	border: 1px solid #0A3871;
+}
+
+.btn-desistir {
+	color: #0A3871;
+	border: 1px solid #0A3871;
+}
+
+.btn-nuevoJuego:hover, .btn-desistir:hover {
+	cursor: pointer;
+}
+
+.ocultar {
+	display: none;
+}
+
+/*-------------------RESPONSIVE------------------------------*/
+
+@media screen and (max-width: 1400px) {
+.canvas {
+	height: 300px;
+}
+}
+@media screen and (max-width: 800px) {
+.contenidoAgregarPalabra {
+	width: 0;
+}
+.contenedor {
+	width: 95vw;
+	text-align: left;
+	margin: 8vh 2.5vw
+}
+.btn-guardar, .btn-cancelar {
+	width: 45vw;
+}
+.btn-guardar {
+	margin-right: 10px;
+}
+.palabra-oculta{
+	margin: 10px 0px 10px 0px;
+	font-size: 60px;
+}
+.letras {
+	margin-bottom: 5vh;
+	font-size: 25px;
+}
+.btn-nuevoJuego, .btn-desistir {
+	width: 45vw;
+}	
+.btn-nuevoJuego {
+	margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.canvas{
+	height: 250px;
+}
+.palabraAgregar {
+	width: 90vw;
+}
+.btn-guardar, .btn-cancelar {
+	width: 95vw;
+}
+.btn-guardar{
+	margin-bottom: 10px;
+	margin-right: 0px;
+}
+.palabra-oculta{
+	margin: 10px 0px 0px 0px;
+	font-size: 40px;
+}
+.btn-nuevoJuego, .btn-desistir {
+	width: 90vw;
+}
+.btn-nuevoJuego{
+	margin-bottom: 10px;
+	margin-right: 0px;
+}	
+}
