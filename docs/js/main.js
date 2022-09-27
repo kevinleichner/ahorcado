@@ -21,10 +21,10 @@ if(window.screen.width <= 900){
 
 // PALABRA OCULTA
 
-var palabras = ["cabaña"
-// , "nueces", "brisa", "cabaña", "patear", "zapato", "arbol", "laguna", "codigo", "conejo", "bruja", "higo", "frutilla", "pizza", 
-// "termo", "lengua", "piano", "campera", "hueso", "corazon", "pajaro"
-]
+var palabras = ["cabaña", "nueces", "brisa", "cabaña", "patear", "zapato", "arbol", "laguna", "codigo", "conejo", "bruja", "higo", "frutilla", "pizza", 
+"termo", "lengua", "piano", "campera", "hueso", "corazon", "pajaro", "berenjena", "tomate", "carpintero", "mesera", "brujula", "maremoto", "asteroide", "musculacion", "heroe",
+"canciones", "lista", "lampara", "murcielago", "computadora", "astronauta", "alfombra", "casco", "lapiz", "lapicera", "abeja", "fosforo", "semaforo", "literatura", "palangana",
+"plastico", "amor", "felicidad", "pulmones", "pintor", "examen", "evaluacion", "hermano", "laucha", "bombero", "mantiz", "matrix", "caucho", "gaucho", "pastel", "hamburguesa"]
 var numeroAzar = Math.floor(Math.random()*palabras.length);
 var teclasPresionadas = [];
 var letras = document.querySelector("#letras");
